@@ -92,9 +92,10 @@ Add the container config to the `.spec.template.spec.containers` section of the 
 
 Save your changes.
 
-Deploy it with the following command. Be sure to run the command from the `1 Application Design and Build/4 Understanding Multi-container Pod Design Patterns` directory.
+Deploy it with the following commands. Be sure to run the commands from the `1 Application Design and Build/4 Understanding Multi-container Pod Design Patterns` directory.
 
 ```
+kubectl apply -f db-configmap.yml
 kubectl apply -f db-deploy.yml
 ```
 
